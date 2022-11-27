@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .li-section {
+    @apply font-Quicksand hover:text-[#EAEA7F] transition-all duration-300 ease-in-out hover:scale-125 cursor-pointer px-4 text-[16px]
+  }
+  .li-sm {
+    @apply py-4 text-[20px] cursor-pointer hover:scale-110 transition-all duration-300 ease-in-out
+  }
+  .li-social {
+    @apply w-[155px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-0 duration-300 transition-all ease-in-out rounded-r-sm
+  }
+  .button-primary {
+    @apply bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-r from-cyan-400 to-blue-600 transition-all duration-300 ease-in-out hover:scale-110 cursor-pointer px-4  text-white rounded-full hover:text-[#EAEA7F]
+  }
+}
