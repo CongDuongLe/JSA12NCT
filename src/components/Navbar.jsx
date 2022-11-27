@@ -30,10 +30,15 @@ function Navbar() {
         }
     }
     
+    const backToHome = () => {
+        navigation('/')
+    }
+
+
 
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f]">
-       <div>
+       <div onClick={backToHome}>
         <img src={Logo} alt="logo" className ='w-[45px] ' />
        </div>
        {/* Menu items */}
